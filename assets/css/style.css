@@ -1,0 +1,107 @@
+body {
+	background-color: #282a26;
+}
+
+.header {
+	margin: 50px auto;
+	/*width: 800px;*/
+}
+
+.header > h2 {
+	/*background-color: #281a26;*/
+	color: #999;
+	text-align: center;
+}
+
+.content {
+	margin: auto;
+	width: 905px;
+	height: 600px;
+	background-color: black;
+}
+
+#output {
+	margin: auto;
+	width: 905px;
+	height: 600px;
+	background-color: black;
+	color: white;
+	/*overflow: auto;*/
+	/*text-align: center;*/
+	/*line-height: 0px;*/
+}
+
+#stats {
+	width: 300px;
+	float: left;
+	height: 400px;
+	margin: 20px;
+	/*background-color: #1a1a1a;*/
+}
+
+#stats > h2 {
+	margin-left: 15px;
+	font-size: 50px;
+}
+
+#stats > h3 {
+	margin-left: 15px;
+}
+
+#game_display {
+	width: 540px;
+	background-color: #1a1a1a;
+	height: 400px;
+	margin: 20px;
+	margin-left: 0;
+	float: left;
+}
+
+#stick_figure {
+	width: 540px;
+	height: 240px;
+	background-color: #1a1a2f;
+}
+
+#word_display {
+	width: 540px;
+	height: 60px;
+	background-color: #1a1a4f;
+}
+
+#display {}
+
+#table_container {
+	width: 840px;
+	height: 100px;
+	background-color: #1a1a4f;
+	display: block;
+	float: left;
+	margin: auto;
+}
+
+#table > table{
+	/*height: 70px;*/
+	/*border: 1px white solid;*/
+	background-color: #1a1a1a;
+	margin: auto;
+	display: inline-block;
+	float: none;
+}
+
+td {
+	margin: auto;
+	line-height: 56px;
+	font-size: 50px;
+	text-align: center;
+}
+
+td > h1 {
+	font-size: 50px;
+}
+
+.footer {
+	margin: 40px auto;
+	/*width: 800px;*/
+	text-align: center;
+}
