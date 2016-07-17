@@ -1,0 +1,32 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    /*width: 60%;*/
+    height: 80px;
+    /*background-color: #f5f5f5*/
+}
+
+.panel,
+.panel-body {
+	background-color: #2b3e50;
+}
+
+.row > #stats {
+	background-color: #2b3e50;
+}
+
+.row > .table {
+	margin-top: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#used_chars 
+.table tbody #tr td  
+h1 {
+	font-size: 50px;
+}
+
+td > h1 {
+	padding-bottom: 16px;
+}

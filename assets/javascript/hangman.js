@@ -4,6 +4,7 @@ var words = [
   'geppetto',  'agamemnon',  'nebuchadnezzar'
   // ,  'supercalifragilisticexpialidocious'
 ];
+var wins = 0;
 
 function rand(min, max) {
   return (Math.floor(Math.random() * (max - min)) + min);
@@ -18,6 +19,7 @@ function game() {
     var wordSize = 1;
     var lettersLeft = 0;
     var userInput = '';
+    var usedChars = [];
     var result;
     var multiple = 0;
     var returnedObject = {
@@ -104,15 +106,24 @@ function game() {
         result = correctChar(randomWord);
       }
 
-      var statsStr =   ""
-                      +   "<h2>Player Stats</h2><br>"
-                      +   "<h3>last letter : " + userInput + "</h3>"
-                      +   "<h3>tries left : " + tries + "</h3>"
-                      +   "<h3>wins : " + tries + "</h3>"
-                      ;
-
+      var statsStr = ""
+                   + "<h2>Player Stats</h2><br>"
+                   + "<h3>last letter : " + userInput + "</h3>"
+                   + "<h3>tries left : " + tries + "</h3>"
+                   + "<h3>wins : " + tries + "</h3>"
+                   ;
       var stats = document.getElementById("stats");
       stats.innerHTML = statsStr;
+
+      var used_charsStr = ""
+                        + "<h2>Used Letters</h2><br>"
+                        + "<h3>last letter : " + userInput + "</h3>"
+                        + "<h3>tries left : " + tries + "</h3>"
+                        + "<h3>wins : " + tries + "</h3>"
+                        ;
+      var used_chars = document.getElementById("used_chars");
+      used_chars.innerHTML = used_charsStr;
+
     }
 
   // } while ((tries > 0) || ((wordSize - lettersLeft) > 0));
