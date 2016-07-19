@@ -10,6 +10,7 @@
 .panel,
 .panel-body {
 	background-color: #2b3e50;
+	box-shadow: none;
 }
 
 .row > #stats {

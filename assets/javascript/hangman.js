@@ -33,6 +33,7 @@ function game() {
     console.log("lettersLeft == "+lettersLeft);
     console.log("words[randomWord] == "+words[randomWord]);
 
+    displayWord();
 
     function displayWord() {
 
@@ -116,5 +117,3 @@ function game() {
   // } while ((tries > 0) || ((wordSize - lettersLeft) > 0));
 
 }
-
-//game();
