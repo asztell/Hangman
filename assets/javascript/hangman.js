@@ -38,6 +38,10 @@ function game() {
     wordSize = words[randomWord].length;
     lettersLeft = wordSize;
 
+    var myBtn = document.getElementById("myBtn");
+    myBtn.className = 'btn btn-primary btn-lg btn-block';
+    myBtn.innerHTML = 'New Word';
+
 
     // word and character display function
     function displayWord() {
@@ -58,9 +62,8 @@ function game() {
 
                 if(!returnedObject.usedChars.includes(userInput.charAt(0))) {
                     returnedObject.usedChars.push(userInput.charAt(0));
-                    console.log(returnedObject.usedChars);
                 }
-//                console.log("last char = "+returnedObject.usedChars[returnedObject.usedChars.length-1]);
+
             } else {
                 var t = document.createTextNode("_");
             }
@@ -76,6 +79,18 @@ function game() {
             t = document.createTextNode(returnedObject.usedChars.last()+' ');
             var usedChars = document.getElementById('used_chars');
             usedChars.appendChild(t);
+        }
+
+        if(lettersLeft == 0) {
+            wins++;
+
+            var myBtn = document.getElementById("myBtn");
+            myBtn.innerHTML = 'New Word';
+            myBtn.className = 'btn btn-success btn-lg btn-block';
+
+            // game();
+
+            // usedChars.innerHTML = '';
         }
 
 
