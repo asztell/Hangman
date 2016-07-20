@@ -16,85 +16,71 @@
 		</div>
 	</div>
 	<!-- <div id="content"> -->
-		<div class="container">
-			<div class="row">
-				<div class="panel panel-default col-lg-5 col-md-5 col-sm-5">
-					<div class="panel-body">
-						<h2>Player Stats</h2><br>
-					</div>
-				</div>
-				<div class="panel panel-default col-lg-6 col-md-6 col-sm-6">
-					<div class="panel-body">
-						<h2>Used Letters</h2><br>
-					</div>
+	<div class="container">
+		<div class="row">
+			<div class="panel panel-default col-lg-5 col-md-5 col-sm-5 col-xs-6">
+				<div class="panel-body">
+					<h2>Player Stats</h2>
 				</div>
 			</div>
-			<div class="row">
-				<div class="panel panel-default col-lg-3 col-md-3 col-sm-3">
-					<div class="panel-body">
-	                   	<h3>last letter : </h3>
-	                   	<h3>tries left : </h3>
-	                   	<h3>wins : </h3>
-					</div>
-	            </div>
-				<div class="panel panel-default col-lg-1 col-md-1 col-sm-1">
-					<div id="stats" class="panel-body">
-	                   	<h3>.</h3>
-	                   	<h3>7</h3>
-	                   	<h3>0</h3>
-					</div>
-	            </div>
-				<div class="panel panel-default col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-	            	<div class="panel-body">
-						<table class="table text-center">
-		              		<tbody>
-			               		<tr id="used_chars" class="active">
-<!-- 				               			<td><h1>y</h1></td>
-			               			<td><h1>o</h1></td>
-			               			<td><h1>u</h1></td>
-			               			<td><h1>r</h1></td>
-			               			<td><h1>_</h1></td>
-			               			<td><h1>w</h1></td>
-			               			<td><h1>o</h1></td>
-			               			<td><h1>r</h1></td>
-			               			<td><h1>d</h1></td>
--->				            		</tr>
-								<tr class="active">
-									
-								</tr>
-			            	</tbody>
-			           	</table>						
-	            	</div>
-	            </div>
-	            <div class="col-lg-2 col-md-2 col-sm-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1"><br>
-	            	<div class="row">
-						<a id="myBtn" onclick="game()" class="btn btn-default btn-lg btn-block">New Word</a>
-					</div><br><br>
-	            	<div class="row">
-						<a href="#" class="btn btn-primary btn-lg btn-block">New Game</a>
-	            	</div>
-	            	<div class="row">
-	            	</div>
-	            </div>
-	        </div>
-            <div class="row">
-              	<table class="table text-center">
-              		<tbody>
-	               		<tr id="tr" class="active">
-	               			<td><h1>y</h1></td>
-	               			<td><h1>o</h1></td>
-	               			<td><h1>u</h1></td>
-	               			<td><h1>r</h1></td>
-	               			<td><h1>_</h1></td>
-	               			<td><h1>w</h1></td>
-	               			<td><h1>o</h1></td>
-	               			<td><h1>r</h1></td>
-	               			<td><h1>d</h1></td>
-	            		</tr>
-	            	</tbody>
-	           	</table>
-	        </div>
+			<div class="panel panel-default col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div class="panel-body">
+					<h2>Used Letters</h2>
+				</div>
+			</div>
 		</div>
+		<div class="row">
+			<div class="panel panel-default col-lg-3 col-md-3 col-sm-3 col-xs-3">
+				<div class="panel-body">
+                   	<h3>tries</h3>
+                   	<h3>wins</h3>
+				</div>
+            </div>
+			<div class="panel panel-default col-lg-1 col-md-1 col-sm-1 col-xs-1">
+				<div id="stats" class="panel-body">
+                   	<h3>7</h3>
+                   	<h3>0</h3>
+				</div>
+            </div>
+			<div class="panel panel-default col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-2" id="used_char_panel">
+            	<div class="panel-body" id="used_char_panel">
+					<table class="table text-center">
+	              		<tbody>
+		               		<tr>
+		               			<h1 id="used_chars"></h1>
+		            		</tr>
+		            	</tbody>
+		           	</table>						
+            	</div>
+            </div>
+        </div>
+        <div class="row">
+          	<table class="table text-center">
+          		<tbody>
+               		<tr id="tr" class="active">
+               			<td><h1>y</h1></td>
+               			<td><h1>o</h1></td>
+               			<td><h1>u</h1></td>
+               			<td><h1>r</h1></td>
+               			<td><h1>_</h1></td>
+               			<td><h1>w</h1></td>
+               			<td><h1>o</h1></td>
+               			<td><h1>r</h1></td>
+               			<td><h1>d</h1></td>
+            		</tr>
+            	</tbody>
+           	</table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-lg-offset-5 col-md-offset-5 col-sm-offset-5">
+            	<div class="row">
+					<a id="myBtn" onclick="game()" class="btn btn-primary btn-lg btn-block">Start Game</a>
+            	</div>
+            </div>
+        </div>
+    </div>
 	<!-- </div> -->
 	<div class="container">
 		<div class="row">
