@@ -12,7 +12,7 @@ function rand(min, max) {
     return (Math.floor(Math.random() * (max - min)) + min);
 }
 
-// awesome last-element-of-array function!
+// fantastically awesome last-element-of-Array function!
 if (!Array.prototype.last){
     Array.prototype.last = function(){
         return this[this.length - 1];
@@ -38,7 +38,6 @@ function game() {
     wordSize = words[randomWord].length;
     lettersLeft = wordSize;
 
-    displayWord();
 
     // word and character display function
     function displayWord() {
@@ -74,19 +73,16 @@ function game() {
 
         if(returnedObject.usedChars.length > 0) {
 
-            // var usedCharsStr = ""
-            //              // + "<h1>" + returnedObject.usedChars[returnedObject.usedChars.length-1] + "</h1>"
-            //              + "<h1>" + returnedObject.usedChars.last() + "</h1>"
-            //              ;
             t = document.createTextNode(returnedObject.usedChars.last()+' ');
             var usedChars = document.getElementById('used_chars');
-            // h1 = document.createElement("h1");
-            // h1.appendChild(t);
             usedChars.appendChild(t);
         }
 
 
     }
+
+    displayWord();
+
     
     // character checker function
     function correctChar(wordUsed) {
@@ -102,7 +98,8 @@ function game() {
                 multiple++;
                 lettersLeft--;
 
-                if(!returnedObject.usedChars.includes(userInput.charAt(0))) {
+                if(!returnedObject.usedChars.includes(userInput.charAt(0))
+                    && typeof i !== 'number') {
                     returnedObject.usedChars.push(i);
                 }
             }
