@@ -2,7 +2,7 @@
 
 var words = [
     'geppetto',  'agamemnon',  'nebuchadnezzar'
-  // ,  'supercalifragilisticexpialidocious'
+  ,  'supercalifragilisticexpialidocious'
 ];
 var wins = 0;
 var usedWords = [];
@@ -22,7 +22,7 @@ if (!Array.prototype.last){
 // main game function
 function game() {
 
-    var randomWord = rand(0,3);
+    var randomWord = rand(0,4);
     var tries = 7;
     var wordSize = 1;
     var lettersLeft = 0;
